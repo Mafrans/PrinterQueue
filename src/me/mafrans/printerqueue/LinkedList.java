@@ -42,6 +42,7 @@ public class LinkedList {
      * @return
      */
     public Node removeFirst() {
+        if(isEmpty()) throw new UnsupportedOperationException("Cannot remove from an empty list");
         Node n = first;
         first = first.getNext();
         size--;

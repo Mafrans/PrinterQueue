@@ -9,12 +9,14 @@ package me.mafrans.printerqueue;
  */
 public class LinkedList {
     Node first;
+    int size;
 
     /**
      * Constructor to create an empty list.
      */
     public LinkedList() {
         first = null;
+        size = 0;
     }
 
     /**
@@ -24,6 +26,7 @@ public class LinkedList {
      * @param newNode
      */
     public void addLast(Node newNode) {
+        size++;
         for(Node node = first; node != null; node = node.getNext()) {
             if(node.getNext() == null) {
                 node.next = newNode;
@@ -42,6 +45,7 @@ public class LinkedList {
     public Node removeFirst() {
         Node n = first;
         first = first.getNext();
+        size = Math.max(0, size - 1);
 
         return n;
     }
@@ -54,7 +58,7 @@ public class LinkedList {
      * @return
      */
     public int size() {
-        return 0;
+        return size;
     }
 
     /**

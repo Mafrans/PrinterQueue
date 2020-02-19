@@ -6,26 +6,12 @@ package me.mafrans.printerqueue;
  *
  * @author Magnus Silverdal
  */
-public class Queue {
-    // Need data structure....
-
-    public Queue() {
-
-    }
-
+public class Queue extends LinkedList {
     public void enqueue(String text) {
-
+        this.addLast(new Node(text));
     }
 
     public String dequeue() {
-        return "";
-    }
-
-    public boolean isEmpty() {
-        return false;
-    }
-
-    public int size() {
-        return -1;
+        return this.removeFirst().getData();
     }
 }

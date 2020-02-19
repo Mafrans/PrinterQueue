@@ -16,7 +16,6 @@ public class LinkedList {
      */
     public LinkedList() {
         first = null;
-        size = 0;
     }
 
     /**
@@ -45,7 +44,7 @@ public class LinkedList {
     public Node removeFirst() {
         Node n = first;
         first = first.getNext();
-        size = Math.max(0, size - 1);
+        size--;
 
         return n;
     }

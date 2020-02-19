@@ -40,7 +40,10 @@ public class LinkedList {
      * @return
      */
     public Node removeFirst() {
-        return null;
+        Node n = first;
+        first = first.getNext();
+
+        return n;
     }
 
     /**

@@ -33,7 +33,7 @@ kortfattad kod samt en minimal mängd globala variabler.
 ### Positiva erfarenheter
 Projektet har en mycket liten mängd kod, men lyckas ändå mycket väl med att förmedla 
 koden till läsaren. Med enkel psuedokod kan även vissa av de mer avancerade algorimerna 
-beskrivas med enkelhet.
+beskrivas med enkelhet. 
 ```
 /* Psuedocode:
 *
@@ -56,9 +56,12 @@ for(Node node = first; node != null; node = node.getNext()) {
 }
 first = newNode;
 ```
+Detta var den första gången jag skrivit ett testdrivet projekt, men även den första 
+gången jag lade full fokus på enkelhet och liten storlek snarare än funktion och 
+abstraktion, vilket jag lyckades mycket väl med.
 
 ### Negativa erfarenheter
-Den länkade listan (LinkedList.java) är dåligt optimerat och klarar inte av hantering av 
+Den länkade listan (LinkedList.java) är dåligt optimerad och klarar inte av hantering av 
 mycket stora mängder noder. Detta är inte ett stort problem för en skrivarkö, men 
 LinkedList.java bör inte användas av andra projekt utan att ha optimeringen i åtanke.
 
